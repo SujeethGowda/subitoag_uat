@@ -11,3 +11,40 @@
     backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
     background: rgba(222, 219, 219, 0.3); /* Optional: Add a semi-transparent background */
   }
+
+  .navbar {
+    background-color: #ffffff; /* Change navbar color to white */
+    border: none;
+  }
+  
+  /* Dropdown style */
+  .navbar-nav .dropdown-menu {
+    background-color: #ffffff; /* Dropdown background color */
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-nav .dropdown-item {
+    color: #333; /* Dropdown item color */
+  }
+  
+  .navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa; /* Dropdown item hover color */
+  }
+
+  .text-container {
+ /* width: 70%; Set a fixed width for consistency */
+  margin: 0 auto; /* Center the div horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+  position: absolute; /* Set positioning to absolute */
+  left: 0; /* Align to the left end of the screen */
+  }
+  
+  .text-container p {
+    color: #ffffff;
+    text-align: justify; /* Justify text alignment */
+  }
