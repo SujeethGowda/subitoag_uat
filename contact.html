@@ -31,7 +31,7 @@
 
     <!-- THEME STYLES -->
     <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="css/dropdown.css" type="text/css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="/img/logo_new.png" />
@@ -90,10 +90,24 @@
                     >About</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-item-child nav-item-hover" href="products.html"
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-item-child nav-item-hover dropdown-toggle"
+                    href="products.html"
+                    id="productsDropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    
                     >Products</a
                   >
+                  <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <li><a class="dropdown-item" href="herbicides.html">Herbicides</a></li>
+                    <li><a class="dropdown-item" href="fungicides.html">Fungicides</a></li>
+                    <li><a class="dropdown-item" href="insecticides.html">Insecticides</a></li>
+                    <li><a class="dropdown-item" href="plantgrowthregulators.html">Plant Growth Regulators</a></li>
+                    <li><a class="dropdown-item" href="bactericides.html">Bactericides</a></li>
+                  </ul>
                 </li>
                 <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li> -->
                 <li class="nav-item">
@@ -408,6 +422,7 @@
     <script src="js/layout.min.js" type="text/javascript"></script>
     <script src="js/components/wow.min.js" type="text/javascript"></script>
     <script src="js/components/gmap.min.js" type="text/javascript"></script>
+    <script src="js/dropdown.js" type="text/javascript"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap"
       async

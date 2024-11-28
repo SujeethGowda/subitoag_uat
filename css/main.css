@@ -48,3 +48,20 @@
     color: #ffffff;
     text-align: justify; /* Justify text alignment */
   }
+
+  /* Adjust for mobile view */
+/* Ensure both carousel items have the same height */
+.carousel-inner .item {
+  height: 100vh; /* Adjust this height as needed */
+  overflow: hidden;
+}
+
+/* Adjust for mobile view */
+@media (max-width: 768px) {
+  .carousel-inner .item .carousel-centered {
+    position: absolute; /* Optional: to position it relative to the parent */
+    top: 25%; /* Move content down by 25% of the height */
+    transform: translateY(0); /* Reset any vertical transformations */
+  }
+}
+
